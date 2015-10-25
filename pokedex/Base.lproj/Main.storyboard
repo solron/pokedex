@@ -30,7 +30,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6O-jj-Rma">
-                                        <rect key="frame" x="235" y="9" width="131" height="38"/>
+                                        <rect key="frame" x="235" y="17" width="131" height="38"/>
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="131" id="K4h-g2-m3u"/>
@@ -61,7 +61,13 @@
                                     <constraint firstAttribute="bottom" secondItem="yzD-Ry-FYT" secondAttribute="bottom" constant="8" id="NIO-FL-MS9"/>
                                     <constraint firstItem="a6O-jj-Rma" firstAttribute="centerX" secondItem="0t9-ud-ptl" secondAttribute="centerX" id="P9N-Lf-SME"/>
                                     <constraint firstItem="a6O-jj-Rma" firstAttribute="centerY" secondItem="0t9-ud-ptl" secondAttribute="centerY" id="VQ5-oL-6pJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="a6O-jj-Rma" secondAttribute="bottom" id="kRq-my-Z1w"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="VQ5-oL-6pJ"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="M7D-mu-NcD">
                                 <rect key="frame" x="20" y="120" width="560" height="460"/>
@@ -188,7 +194,7 @@
                                         </variation>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFe-Ck-Qso">
-                                        <rect key="frame" x="8" y="12" width="46" height="31"/>
+                                        <rect key="frame" x="8" y="16" width="46" height="31"/>
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="31" id="4bU-Pn-euK"/>
@@ -207,7 +213,7 @@
                                     <constraint firstItem="TGg-tO-lxO" firstAttribute="centerY" secondItem="dBf-Sn-2Ht" secondAttribute="centerY" id="dZb-bg-CTv"/>
                                     <constraint firstAttribute="height" constant="55" id="moY-7L-PQ3"/>
                                     <constraint firstItem="RFe-Ck-Qso" firstAttribute="leading" secondItem="dBf-Sn-2Ht" secondAttribute="leading" constant="8" id="wxw-q1-Mp8"/>
-                                    <constraint firstAttribute="bottom" secondItem="RFe-Ck-Qso" secondAttribute="bottom" constant="12" id="yrd-A6-vAw"/>
+                                    <constraint firstAttribute="bottom" secondItem="RFe-Ck-Qso" secondAttribute="bottom" constant="8" id="yrd-A6-vAw"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Jsf-qV-TfG">
